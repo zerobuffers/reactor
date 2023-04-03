@@ -1,0 +1,4 @@
+# 4 space indentation because pyblack
+[*.py]
+indent_style = space
+indent_size = 4

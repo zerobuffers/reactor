@@ -1,0 +1,36 @@
+[project]
+name="reactor"
+version = "0.0.1"
+authors = [
+  { name="zerobuffers" }
+]
+description="reactor"
+readme="README.md"
+license = "Apache-2.0"
+requires-python = ">=3.11"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: Apache-2.0",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  'requests >= 2.28',
+]
+
+[tool.black]
+line-length = 100
+required-version = "22.10.0"
+target-version = ['py311']
+
+[project.urls]
+homepage = "https://github.com/zerobuffers/reactor"
+
+[build.system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tools.setuptools_scm]
+local_scheme = "no-local-version"
+
+[tools.setuptools]
+packages = ["reactor"]
